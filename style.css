@@ -1,0 +1,352 @@
+/*---------------------------------------------------------------------------------
+
+ Theme Name:   Divi Child
+ Theme URI:    http://themencode.com/
+ Description:  Divi Child For EDD 
+ Author:       ThemNcode
+ Author URI:   http://themencode.com/
+ Template:     Divi
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+
+------------------------------ ADDITIONAL CSS HERE ------------------------------*/
+
+.thmn-product-row {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+}
+.thmn-product-thumb {
+    position: relative;
+}
+
+.thmn-product-display-btn {
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.themncode-main-content {
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.thmn-product-view-btn {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+}
+
+.thmn-product-display-btn {
+    visibility: hidden;
+    background: rgba(0,0,0,.5);
+    transition: 0.3s;
+    opacity: 0;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+} 
+
+.thmn-product-thumb:hover .thmn-product-display-btn  {
+    visibility:visible;
+    opacity: 1;
+} 
+
+.thmn-product-row article {
+    background: #f9fcff;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 59, 255, 0.05);
+    border-radius: 4px;
+}
+
+div#et-main-area {
+    background-color: transparent !important;
+}
+
+.thmn-product-image img {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.thmn-product-view-btn a {
+    border: 0;
+    background: #ffffff;
+    display: block;
+    padding: 10px 25px;
+    height: auto;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #060606;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    margin: auto;
+}
+
+
+.thmn-download-title a h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2E384D;
+} 
+.thmn-download-meta {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.thmn-download-price {
+    justify-self: end;
+}
+
+.thmn-product-details {
+    padding: 25px;
+}
+
+.thmn-download-banner-wrapper {
+    background: rgba(40, 97, 242, 0.1) !important;
+}
+
+.thmn-download-banner-content h1 {
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    color: #2e384d!important;
+    line-height: 40px !important;
+    text-align: center;
+}
+
+.thmn-download-banner-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/*breadcrubms*/
+#thmn_breadcrumbs .separator{
+    font-size:20px;
+    color:#ccc;
+    font-weight:100;
+}
+#thmn_breadcrumbs{
+    overflow:hidden;
+    text-align: center;
+    list-style:none;
+    margin:11px 0;
+}
+#thmn_breadcrumbs li{
+    margin-right:14px;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+
+/*thmn-download-tabs*/
+.thmn-download-tabs {
+    margin: 0 auto;
+    font-size:0;
+    border-radius:4px;
+  }
+  
+  .thmn-download-tabs > input[type="radio"] {
+    display: none;
+  }
+  
+  .thmn-download-tabs > div {
+    display: none;
+    border: 1px solid #e1e8ed;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  
+  #tab-btn-1:checked ~ #content-1,
+  #tab-btn-2:checked ~ #content-2,
+  #tab-btn-3:checked ~ #content-3,
+  #tab-btn-4:checked ~ #content-4 {
+    display: block;
+  }
+  
+  .thmn-download-tabs > label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #fff;
+    border: 1px solid #e1e8ed;
+    padding: 2px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+  }
+  
+  .thmn-download-tabs > label:not(:first-of-type) {
+    border-left: none;
+  }
+  
+  .thmn-download-tabs > input[type="radio"]:checked + label {
+    background-color: #fff;
+    border-bottom: 1px solid #e1e8ed;
+  }
+
+  .thmn-download-product-area {
+    padding-top: 100px;
+    max-width: 1120px;
+    margin: auto;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.thmn-download-product-row {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap:40px;
+}
+
+.thmn-download-single-thumb {
+    background-color: #fff;
+    line-height: 0px;
+} 
+.thmn-download-single-thumb img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.thmn-download-view-demo {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+
+}
+
+
+.thmn-download-view-btns- {
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    column-gap: 20px;
+}
+
+.thmn-previwe-btn a {
+    display: inline-block;
+    background: #F6891F;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px !important;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding:8px 30px;
+    border-radius: 3px;
+}
+.thmn-previwe-btn a:hover {
+    background-color:#526089;
+    color:#fff;
+}
+
+.thmn-previwe-btn.btn-two a  {
+    background-color:#526089;
+    color:#fff;
+} 
+.thmn-previwe-btn.btn-three a  {
+    background-color:#526089;
+    color:#fff;
+} 
+
+.thmn-previwe-btn.btn-two a:hover {
+    background: #F6891F;
+    color:#ffff;
+}
+
+.thmn-previwe-btn.btn-three a:hover {
+    background: #F6891F;
+    color:#ffff;
+}
+
+.thmn-download-tabs label {
+    width: 25%;
+}
+
+@media only screen and (max-width: 980px) {
+    .thmn-download-product-row {
+        grid-template-columns: auto; 
+        grid-row-gap:20px;
+    }
+  } 
+
+  .thmn-download-price-box {
+    background: white;
+    padding: 15px 25px;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+ .thmn-download-price-container .product-price {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+.thmn-download-price-container .product-buttons {
+    text-align: center;
+}
+.thmn-download-info-box  {
+    background: white;
+    padding: 15px 25px;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.thmn-download-themncode-box {
+    background: white;
+    padding: 15px 25px;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+@media only screen and (max-width:617px) {
+    .thmn-download-view-btns- {
+        max-width: 550px;
+        margin: auto;
+        display: flex;
+        column-gap: 20px;
+        flex-direction: column;
+    }
+    .thmn-previwe-btn {
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .thmn-previwe-btn a {
+        width:200px;
+    }
+}
+
+
+
+
+
+
+
